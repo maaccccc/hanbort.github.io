@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div class="bubbles">
+        <span style="--i:1;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:1;"></span>
+        
+    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="/Finals/home.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <div class="border1">
+        <!---Navigation + Logo Intro---->
+        <div class="wrapper" id="Home">
+            <nav class="navigation">
+                <div class="nav-logo">
+                    <p>HANBORT</p>
+                </div>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#Home" class="link">Home</a></li>
+                        <li><a href="#About-Me" class="link">About Me</a></li>
+                        <li><a href="#Works" class="link">Works</a></li>
+                    </ul>
+                </div>
+            </nav>
+                <div class="contents" id="contents">
+                    <h1>Hanbort</h1>
+                    <p>Free templates and Tutorials</p>
+
+                </div>
+                <img src="/nobg.png" alt="Featured Picture" class="featured-img">
+                </div>
+            </div>
+            <!---About me Part---->
+            <div class="wrapper2" id="About-Me">
+                <h1>About me</h1>
+                <p>I'm a local college student ,food critic that enjoys eating food while sharing my experiences.<br>
+                I also like to listen to various music genres, I also love playing games, and I don't have any money.   </p>
+                <img src="/bgbg.png" alt="A Picture of Me" class="featured-img2">
+            </div>
+            <!---Works Section---->
+            <div class="wrapper3">
+                </a><h1 id="Works">My Works</h1>
+                <p>View the works that I've made, Downloading the template is FREE!</p>
+                <!---Display ng mga nagawang template/Tutorials---->
+                <div class="work-cont">
+                    <br>
+                    <div class="row0">
+                        <div class="col" id="img1">
+                            <img src="/Finals/Images/Gallery.png" alt="Image of Image Gallery">
+                          <center><h2>Image HTML Template</h2></center>
+                          <center><p><a href="https://github.com/maaccccc/School_project.git" download target="_blank" onclick="return confirm('You are about to visit a new website! Are you sure?')"><i class="fa-solid fa-ellipsis"></i>Download</a></p></center>
+                        </div>
+                        <div class="col" id="vid1">
+                            <video src="/Finals/Images/linear animation.mp4" autoplay loop muted controls="playing" alt="Video of Linear Bubble Animation Template"></video>
+                          <center><h2>Linear Bubble Animation</h2></center>
+                          <center><p><a href="https://github.com/maaccccc/School_project.git" download target="_blank" onclick="return confirm('You are about to visit a new website! Are you sure?')"><i class="fa-solid fa-ellipsis"></i>Download</a></p></center>
+                        </div>
+                        <div class="col" id="vid2">
+                            <video src="/Finals/Images/Login.mp4" autoplay loop muted controls="playing" alt="Video of Login HTML | CSS Template"></video>
+                          <center><h2>Login HTML | CSS Template</h2></center>
+                          <center><p><a href="https://github.com/maaccccc/School_project.git" download target="_blank" onclick="return confirm('You are about to visit a new website! Are you sure?')"><i class="fa-solid fa-ellipsis"></i>Download</a></p></center>
+                          <br>
+                          <p>Credits: @Mhar_Castro</p>
+                        </div>
+                </div>
+            </div>
+    </div>
+    <!---Auto Pop-up code---->
+    <div class="popup-auto">
+        <div class="popup-auto-content">
+            <h1>X</h1>
+            <h2>Welcome to Hanbort</h2>
+            <p>Hanbort is a website dedicated to showing you what I can do as a programmer.
+                Tutorials and Website Templates can be found here for free with no fear of copyright.</p>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footcont"> 
+        <div class="footer-cont">
+            <!---Feedback button + Content Form niya---->
+            <div class="feedback">
+                <br>
+                <div class="popup" id="popup-1">
+                    <div class="overlay">
+                        <div class="content">
+                            <div class="close-btn" onclick="togglePopup()">&times;</div>
+                            <form action="https://formsubmit.co/20210455@s.ubaguio.edu" method="POST">
+                                <br>
+                                <label for="email"></label>
+                                <div class="input-box">
+                                    <i class="bx bx-envelope"></i>
+                                    <input type="email" class="input-field" name="Email" id="Email" placeholder="Email" required>
+                                
+                                </div>
+                                <br>
+                                <label for="comment"></label>
+                                <div class="input-box">
+                                    <i class="bx bx-comment"></i>
+                                    <input type="text" class="input-field" name="Comment" id="Comment" placeholder="Comment">
+                                </div>
+                                <br>
+                                <input type="submit" class="submit" value="          Submit          ">
+                                <br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button class="feedback-button" onclick="togglePopup()">Feedback</button>
+            </div>
+            <!---Content messages ng Footer---->
+            <br>
+            <h1>About US</h1>
+            <br>
+            <p>Hanbort is a website dedicated to showing you what I can do as a programmer.
+            <br>
+            Tutorials and Website Templates can be found here for free with no fear of copyright.</p>
+            <br>
+            <h3>Copyright @2024 HANBORT</h3>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</footer>
+</html>
