@@ -1,35 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
 
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
 /*------------------------ ---------------------- -------------------------------------------------------
                             Responsive Css codes
 ------------------------ ---------------------- -------------------------------------------------------*/
 
 /* Para maging responsive */
 
-@media all and (max-width: 1250px) {
+@media all and (max-width: 1325px) {
     #About-Me .featured-img2{
         position: relative;
         width: 35vh;
-        margin: 0 0 0 120vh;
+        margin: 0 0 0 100vh;
     }
     .footcont h3{
         position: relative;
         margin: 12vh 0 0 0;
     }
     .footer-cont .feedback{
-        margin: 0 0 0 120vh;
+        margin: 7vh 0 0 75vh;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    #About-Me .featured-img2{
+        position: relative;
+        width: 35vh;
+        margin: 0 0 0 100vh;
+    }
+    .footcont h3{
+        position: relative;
+        margin: 12vh 0 0 0;
+    }
+    .footer-cont .feedback{
+        margin: 7vh 0 0 75vh;
     }
 }
 
 @media all and (max-width: 955px) {
     #About-Me .featured-img2{
         position: relative;
-        width: 35vh;
+        width: 25vh;
         margin: 0 0 0 50vh;
     }
     .footer-cont .feedback{
-        margin: 0 0 0 100vh;
+        margin: 5vh 0 0 70vh;
     }
 }
 
@@ -44,9 +72,9 @@
     }
     #Home .featured-img{
         display: flex;
-        position: relative;
-        width: 35vh;
-        margin: auto;
+        position: absolute;
+        width: 25vh;
+        margin: 100vh 0 0 0vh;
     }
     #About-Me h1{
         margin: 0 0vh 100vh 0;
@@ -57,41 +85,65 @@
     }
     #About-Me .featured-img2{
         position: relative;
-        width: 35vh;
-        margin: 0 0 0 50vh;
+        width: 25vh;
+        margin: 0 0 0 20vh;
     }
     #img1 img{
-        margin: 0 0 0 15vh;
+        margin: 0 0 0 7vh;
     }
     #vid1 video{
-        margin: 0 0 0 15vh;
+        margin: 0 0 0 7vh;
     }
     #vid2 video{
-        margin: 0 0 0 15vh;
+        margin: 0 0 0 7vh;
     }
     .footcont h3{
         position: relative;
         margin: 12vh 0 0 0;
     }
     .footer-cont .feedback{
-        margin: 0 0 0 95vh;
+        margin: 15vh 0 0 50vh;
     }
 }
 
 @media all and (max-width: 750px) {
     .footer-cont .feedback{
         display: flex;
-        margin: 10vh 0 0 90vh;
+        margin: 20vh 0 0 30vh;
     }
     .footcont h3{
         position: relative;
         margin: 12vh 0 0 0;
     }
+    #About-Me .featured-img2{
+        position: relative;
+        width: 25vh;
+        margin: 0 0 0 15vh;
+    }
 }
 
 @media all and (max-width: 700px) {
     .footer-cont .feedback{
-        margin: 20vh 0 0 75vh;
+        display: flex;
+        margin: 20vh 0 0 30vh;
+    }
+    .footcont h3{
+        position: relative;
+        margin: 12vh 0 0 0;
+    }
+    #About-Me .featured-img2{
+        position: relative;
+        width: 25vh;
+        margin: 0 0 0 15vh;
+    }
+    #img1 img{
+        margin: 0 0 0 5vh;
+    }
+    #vid1 video{
+        margin: 0 0 0 5vh;
+    }
+    #vid2 video{
+        margin: 0 0 0 5vh;
     }
 }
 
@@ -108,21 +160,27 @@
         display: flex;
         position:absolute;
         width: 25vh;
-        margin: 0vh 0 0 50vh;
+        margin: 100vh 0 0 0vh;
+    }
+    #About-Me h1{
+        font-size: 7vh;
+    }
+    #About-Me p{
+        margin-top: 17vh;
     }
     #About-Me .featured-img2{
         position: relative;
         width: 35vh;
-        margin: 0 0 0 25vh;
+        margin: 0 0 0 0vh;
     }
     #img1 img{
-        margin: 0 0 0 10vh;
+        margin: 0 0 0 2.5vh;
     }
     #vid1 video{
-        margin: 0 0 0 10vh;
+        margin: 0 0 0 2.5vh;
     }
     #vid2 video{
-        margin: 0 0 0 10vh;
+        margin: 0 0 0 2.5vh;
     }
     .footcont h3{
         position: relative;
@@ -130,8 +188,11 @@
     }
     .footer-cont .feedback{
         display: flex;
-        margin: 20vh 0 0 50vh;
+        margin: 23vh 0 0 25vh;
     }
+    .footer-cont .feedback-button{
+        width: 15vh;
+}
 }
 @media all and (max-width: 500px) {
     .navigation a{
@@ -145,24 +206,23 @@
         position: absolute;
     }
     #Home .featured-img{
-        position: relative;
+        position: absolute;
         width: 30vh;
-        margin: auto;
-        margin: 0vh 0vh 0 50vh;
+        margin: 100vh 0vh 0 0;
     }
     #About-Me .featured-img2{
         position: relative;
         width: 35vh;
-        margin: 0 0 0 10vh;
+        margin: 0 0 0 0vh;
     }
     #img1 img{
-        margin: 0 0 0 5vh;
+        margin: 0 0 0 1.7vh;
     }
     #vid1 video{
-        margin: 0 0 0 5vh;
+        margin: 0 0 0 1.7vh;
     }
     #vid2 video{
-        margin: 0 0 0 5vh;
+        margin: 0 0 0 1.7vh;
     }
     .footcont h3{
         position: relative;
@@ -170,8 +230,11 @@
     }
     .footer-cont .feedback{
         display: flex;
-        margin: 25vh 0 0 35vh;
+        margin: 23vh 0 0 17vh;
     }
+    .footer-cont .feedback-button{
+        width: 15vh;
+}
 }
 @media all and (max-width: 400px) {
     .navigation a{
@@ -194,8 +257,8 @@
     }
     #About-Me p{
         font-size: 15px;
-        padding: 15vh;
-        margin-top: 15vh;
+        padding: 0;
+        margin-top: 25vh;
     }
     #About-Me .featured-img2{
         position: relative;
@@ -203,20 +266,23 @@
         margin: 0 0 0 1vh;
     }
     #img1 img{
-        margin: 0 0 0 5vh;
+        margin: 0 0 0 0vh;
     }
     #vid1 video{
-        margin: 0 0 0 5vh;
+        margin: 0 0 0 0vh;
     }
     #vid2 video{
-        margin: 0 0 0 5vh;
+        margin: 0 0 0 0vh;
     }
     .footcont h3{
         position: relative;
         margin: 12vh 0 0 0;
     }
     .footer-cont .feedback{
-        margin: 25vh 0 0 29vh;
+        margin: 23vh 0 0 17vh;
+    }
+    .footer-cont .feedback-button{
+        width: 11vh;
     }
 }
 
@@ -260,7 +326,7 @@
 }
 
 body{
-    max-width: 1536px;
+    max-width: 350vh;
     background: linear-gradient(to right, #000000, #464242, #024b66, #004938);
     background-size: 200% 200%;
     background-position: 10% 50%;
@@ -554,7 +620,7 @@ footer{
     margin: 12vh 0 0vh 0;
 }
 .feedback{
-    margin: 5vh 0 0 155vh;
+    margin: 5vh 0 0 130vh;
     position:absolute;
     display:inline-block;
     justify-content: center;
@@ -594,6 +660,13 @@ footer{
     cursor: pointer;
     transition: .3s ease-in-out;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); 
+}
+
+.popup-auto-content a{
+    text-decoration: underline;
+    color:#464242;
+    font-weight: bolder;
+    
 }
 
 .popup .overlay{
